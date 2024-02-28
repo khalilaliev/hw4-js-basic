@@ -2,15 +2,12 @@
 
 /// level 1 /// ------------------
 
-const firstNumber = parseInt(prompt("Task 1: Enter first number:"));
-const secondNumber = parseInt(prompt("Task 1: Enter second number:"));
+const firstNumber = parseInt(prompt("Task 1: Enter a number:"));
 
 const message =
-  firstNumber > secondNumber
-    ? console.log("Task 1: The first number is larger!")
-    : firstNumber < secondNumber
-    ? console.log("Task 1: The second number is larger!")
-    : console.log("Task 4: Number are the same!");
+  firstNumber >= 10
+    ? console.log("Task 1: Number is larger or the same!")
+    : console.log("Task 1: Number is less!");
 
 /// --- /// -----------------------------------------------------------------------------
 
@@ -78,8 +75,9 @@ for (let index = firsCycleValue; index <= secondCycleValue; index++) {
 
 /// --- /// -----------------------------------------------------------------------------
 
+const three = 3;
 for (let i = 1; i <= 10; i++) {
-  const res = i * 3;
+  const res = `${three} * ${i} = ${three * i}`;
   console.log(res);
 }
 

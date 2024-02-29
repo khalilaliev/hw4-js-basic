@@ -5,9 +5,8 @@
 const firstNumber = parseInt(prompt("Task 1: Enter a number:"));
 
 const message =
-  firstNumber >= 10
-    ? console.log("Task 1: Number is larger or the same!")
-    : console.log("Task 1: Number is less!");
+  firstNumber >= 10 ? "Number is larger or the same!" : "Number is less!";
+console.log(message);
 
 /// --- /// -----------------------------------------------------------------------------
 
@@ -57,23 +56,34 @@ switch (numberOfMonth) {
 
 /// --- /// -----------------------------------------------------------------------------
 
-for (let i = 0; i <= 10; i++) {
+// for (let i = 0; i <= 10; i++) {
+//   console.log(i);
+// }
+let i = 0;
+while (i < 10) {
+  i++;
   console.log(i);
 }
 
 /// --- /// -----------------------------------------------------------------------------
 
-const firsCycleValue = parseInt(prompt("Enter first cycle value:"));
-const secondCycleValue = parseInt(prompt("Enter second cycle value:"));
-let index;
+let firsCycleValue = parseInt(prompt("Enter first cycle value:"));
+let secondCycleValue = parseInt(prompt("Enter second cycle value:"));
+// let index;
 
-for (let index = firsCycleValue; index <= secondCycleValue; index++) {
-  if (index % 5 === 0) {
-    console.log(index);
+// for (let index = firsCycleValue; index <= secondCycleValue; index++) {
+//   if (index % 5 === 0) {
+//     console.log(index);
+//   }
+// }
+while (firsCycleValue <= secondCycleValue) {
+  if (firsCycleValue % 5 === 0) {
+    console.log(firsCycleValue);
   }
+  firsCycleValue++;
 }
 
-/// --- /// -----------------------------------------------------------------------------
+// /// --- /// -----------------------------------------------------------------------------
 
 const three = 3;
 for (let i = 1; i <= 10; i++) {
@@ -99,7 +109,7 @@ while (countIndex < 5) {
 }
 console.log("Task 2 Result:", sumOfNumber);
 
-/// --- /// -----------------------------------------------------------------------------
+// /// --- /// -----------------------------------------------------------------------------
 
 const num = parseFloat(prompt("Enter value of factorial:"));
 let factorial = 1;
@@ -109,7 +119,7 @@ for (let i = 1; i <= num; i++) {
 }
 console.log(`Factorial of ${num} equal to ${factorial}`);
 
-/// --- /// -----------------------------------------------------------------------------
+/// level 3 ///
 
 const triangle = prompt("Enter triangle elements:");
 
